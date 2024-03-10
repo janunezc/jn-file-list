@@ -1,7 +1,11 @@
 {
   "name": "jn-file-list",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "List files recoursively sorted by last access date and/or last modified date and stores results in a CSV file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janunezc/jn-file-list"
+  },
   "main": "index.js",
   "scripts": {
     "test": "npm test"
