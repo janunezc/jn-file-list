@@ -1,6 +1,6 @@
-# File Lister (jn-file-list)
+# jn-file-list
 
-File Lister is a Node.js module that scans the current directory recursively, listing all files along with their last access and modification dates. It outputs this information to the console and saves it to a CSV file, sorted by the most recent access date. The dates are formatted as `yyyy-mm-dd hh:mm:ss` for clarity and consistency.
+jn-file-list is a Node.js module that scans the current directory recursively, listing all files along with their last access and modification dates. It outputs this information to the console and saves it to a CSV file, sorted by the most recent access date. The dates are formatted as `yyyy-mm-dd hh:mm:ss` for clarity and consistency.
 
 ## Features
 
@@ -11,7 +11,7 @@ File Lister is a Node.js module that scans the current directory recursively, li
 
 ## Getting Started
 
-To get started with File Lister, clone this repository and install the required dependencies.
+To get started with jn-file-list, clone this repository and install the required dependencies.
 
 ### Prerequisites
 
@@ -23,8 +23,8 @@ To get started with File Lister, clone this repository and install the required 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/file-lister.git
-cd file-lister
+git clone https://github.com/janunezc/jn-file-list
+cd jn-file-list
 ```
 
 2. Install the dependencies:
