@@ -1,0 +1,25 @@
+{
+  "name": "jn-file-list",
+  "version": "0.0.1",
+  "description": "List files recoursively sorted by last access date and/or last modified date and stores results in a CSV file",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "FILE",
+    "LIST",
+    "LAST",
+    "Modified",
+    "Date",
+    "Last",
+    "accessed",
+    "date"
+  ],
+  "author": "Jose Nunez",
+  "license": "MIT",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "date-fns": "^3.3.1"
+  }
+}
