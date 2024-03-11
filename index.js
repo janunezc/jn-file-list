@@ -46,7 +46,8 @@ const listFilesAndSave = async () => {
             { id: 'path', title: 'PATH' },
             { id: 'accessTime', title: 'LAST ACCESS DATE' },
             { id: 'modifyTime', title: 'LAST MODIFICATION DATE' }
-        ]
+        ],
+        alwaysQuote: true
     });
 
     await csvWriter.writeRecords(sortedFiles)
