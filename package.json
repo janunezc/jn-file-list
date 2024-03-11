@@ -1,9 +1,10 @@
 {
   "name": "jn-file-list",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "List files recoursively sorted by last access date and/or last modified date and stores results in a CSV file",
   "bin": {
-    "jn-file-list": "./index.js"
+    "jn-file-list": "./index.js",
+    "jn-file-list-copy":"./copy.js"
   },
   "repository": {
     "type": "git",
