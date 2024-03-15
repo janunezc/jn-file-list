@@ -33,17 +33,19 @@ const listFilesAndSave = async () => {
         const stats = fs.statSync(file);
         return {
             path: file,
+            sizeInBytes: stats.size, // Added file size in bytes
             accessTime: format(stats.atime, 'yyyy-MM-dd HH:mm:ss'),
             modifyTime: format(stats.mtime, 'yyyy-MM-dd HH:mm:ss')
         };
     });
 
-    const sortedFiles = fileStats.sort((a, b) => new Date(b.modifyTime) - new Date(a.modifyTime));
+    const sortedFiles = fileStats.sort((a, b) => new Date(b.accessTime) - new Date(a.accessTime));
 
     const csvWriter = createObjectCsvWriter({
         path: 'file-list.csv',
         header: [
             { id: 'path', title: 'PATH' },
+            { id: 'sizeInBytes', title: 'SIZE (BYTES)' }, // Added header for file size
             { id: 'accessTime', title: 'LAST ACCESS DATE' },
             { id: 'modifyTime', title: 'LAST MODIFICATION DATE' }
         ],
